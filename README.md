@@ -46,3 +46,15 @@ VITE_API_BASE_URL=http://localhost:8000
 - JSON dataset: `backend/storage/uploads/example_dataset.json`
 - Local model: `backend/storage/uploads/example_model.py`
 - Sample result: `backend/storage/jobs/sample_result.json`
+
+## Ready-to-Use Test Models and Datasets
+
+All files are available in `backend/storage/uploads/` and can be uploaded directly in the UI.
+
+- `sentiment_model.py` ↔ `sentiment_dataset.csv`
+- `qa_model.py` ↔ `qa_dataset.csv`
+- `number_predictor.py` ↔ `numbers_dataset.csv`
+- `spam_detector.py` ↔ `spam_dataset.csv`
+- `random_model.py` ↔ `unlabeled_dataset.csv`
+
+See `backend/storage/uploads/QUICK_START.md` for step-by-step testing instructions.

@@ -1,0 +1,7 @@
+input,label
+"I love this product",positive
+"This is amazing and great",positive
+"The experience was terrible",negative
+"I hate how bad this feels",negative
+"It works as expected",neutral
+"The results are okay",neutral
