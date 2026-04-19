@@ -10,7 +10,12 @@ class TrustCalculator:
         clean = [str(p).strip().lower() for p in predictions if p is not None]
         if not clean:
             return 0.0
-        return len(set(clean)) / len(clean) if len(clean) <= 1 else max(0.0, 1.0 - ((len(set(clean)) - 1) / len(clean)))
+        unique_count = len(set(clean))
+        total_count = len(clean)
+        if total_count <= 1:
+            return 1.0
+        diversity_penalty = (unique_count - 1) / total_count
+        return max(0.0, 1.0 - diversity_penalty)
 
     def _compute_hallucination_rate(self, predictions: List[Any], ground_truth: List[Any]) -> float:
         if not predictions or not ground_truth:
