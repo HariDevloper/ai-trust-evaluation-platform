@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List
 
 
 @dataclass
@@ -16,7 +16,7 @@ class PlatformError(Exception):
 
 class ErrorHandler:
     @staticmethod
-    def validate_dataset(dataset: List[Dict[str, Any]]) -> Tuple[bool, str | None]:
+    def validate_dataset(dataset: List[Dict[str, Any]]) -> tuple[bool, str | None]:
         if not isinstance(dataset, list):
             return False, "Dataset must be a list of objects"
         if not dataset:
@@ -26,7 +26,7 @@ class ErrorHandler:
         return True, None
 
     @staticmethod
-    def validate_model_config(config: Dict[str, Any]) -> Tuple[bool, str | None]:
+    def validate_model_config(config: Dict[str, Any]) -> tuple[bool, str | None]:
         if not isinstance(config, dict):
             return False, "Model config must be an object"
         model_type = (config.get("type") or "local").lower()
