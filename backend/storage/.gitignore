@@ -1,0 +1,8 @@
+*
+!.gitignore
+!uploads/
+!jobs/
+!uploads/example_dataset.csv
+!uploads/example_dataset.json
+!uploads/example_model.py
+!jobs/sample_result.json

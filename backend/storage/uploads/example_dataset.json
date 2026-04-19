@@ -1,0 +1,6 @@
+{
+  "samples": [
+    {"input": "What is 2+2?", "reference": "4"},
+    {"input": "What is capital of France?", "reference": "Paris"}
+  ]
+}
