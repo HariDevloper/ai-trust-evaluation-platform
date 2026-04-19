@@ -1,0 +1,6 @@
+input,label
+"Congratulations! You are a winner. Click now.",spam
+"Let's schedule a meeting for tomorrow.",ham
+"Urgent: Claim your free prize today!",spam
+"Can you review the project update?",ham
+"Limited time offer, click to win big!",spam

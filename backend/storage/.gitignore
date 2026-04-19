@@ -5,4 +5,15 @@
 !uploads/example_dataset.csv
 !uploads/example_dataset.json
 !uploads/example_model.py
+!uploads/sentiment_model.py
+!uploads/qa_model.py
+!uploads/number_predictor.py
+!uploads/spam_detector.py
+!uploads/random_model.py
+!uploads/sentiment_dataset.csv
+!uploads/qa_dataset.csv
+!uploads/numbers_dataset.csv
+!uploads/spam_dataset.csv
+!uploads/unlabeled_dataset.csv
+!uploads/QUICK_START.md
 !jobs/sample_result.json
