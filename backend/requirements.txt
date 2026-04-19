@@ -1,5 +1,7 @@
-# Requirements
-
+fastapi
+uvicorn
 numpy
 pandas
 scikit-learn
+requests
+python-multipart

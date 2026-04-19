@@ -1,0 +1,34 @@
+{
+  "job_id": "sample-job-001",
+  "status": "completed",
+  "config": {
+    "dataset_path": "backend/storage/uploads/example_dataset.csv",
+    "model_type": "local",
+    "task_type": "classification"
+  },
+  "results": {
+    "performance": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "latency_avg": 0.005,
+      "throughput": 200.0
+    },
+    "trust": {
+      "consistency": 1.0,
+      "bias_score": 0.0,
+      "hallucination_rate": 0.0,
+      "toxicity_score": 0.0
+    },
+    "trust_score": 1.0,
+    "detailed_outputs": [
+      {
+        "index": 0,
+        "input": {"input": "What is 2+2?"},
+        "expected": "4",
+        "prediction": "4",
+        "latency": 0.004
+      }
+    ]
+  }
+}

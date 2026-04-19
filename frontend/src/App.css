@@ -1,0 +1,142 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+}
+
+.header h1 {
+  margin-bottom: 4px;
+}
+
+.header p {
+  color: #6b7280;
+  margin-top: 0;
+}
+
+.panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.field input,
+.field select,
+.field textarea,
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+
+.field.inline {
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+
+.analysis {
+  background: #111827;
+  color: #d1d5db;
+  padding: 12px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.trust-card {
+  grid-column: span 2;
+  background: #ecfdf5;
+}
+
+.big {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+
+.history {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.loader {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #d1d5db;
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
